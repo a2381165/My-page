@@ -1,0 +1,257 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none !important;
+	text-decoration: none !important;
+	font-size: 14px;
+	font-weight: normal;
+	font-family: 微软雅黑;
+	color: #222222;
+}
+body{
+	background: none !important;
+}
+/*导航begin*/
+.nave{
+	width:100%;
+	line-height: 120px;
+	text-align: center;
+	margin-bottom: 0;
+}
+.head{
+	width: 65%;
+	margin: 0 auto;
+}
+
+.navbar-header{
+	margin: 0 auto;
+}
+.name{
+	line-height: 95px;
+}
+.head ul li{
+	width: 120px;
+	height: 120px;
+	text-align: center;
+	margin:0 auto;
+	cursor: pointer;
+	border: 1px solid #F8F8F8;
+}
+.head a{
+	font-size: 16px;
+	color: black;
+	line-height: 82px !important;
+}
+.head li:hover{
+	background: #FFC001;
+}
+.head li:hover a{
+	color: white !important;
+}
+.name span:first-child{
+	color: rgb(255, 192, 1);
+	font-size: 32px;
+	font-weight: bold;
+}
+.name span:nth-child(2){
+	color: rgb(204, 204, 204);
+	font-weight: bold;
+	font-size: 32px;
+	margin-right: 50px;
+}
+@media only screen and (min-width: 970px) and (max-width: 1500px) {
+	.head{
+		width: 100%;
+		margin: 0 auto;
+		}
+}
+@media only screen and (min-width: 764px) and (max-width: 970px) {
+	.head{
+		width: 100%;
+	}
+	.nav{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.head ul li{
+	width: 96px;
+	height: 50px;
+	text-align: center;
+	margin:0 auto;
+	cursor: pointer;
+	border: 1px solid #F8F8F8;
+}
+	.head ul li a{
+	line-height: 10px !important;
+	}
+	.head_pic .nav-arrows img{
+	width: 50px;
+	height: 50px;
+	}
+}
+@media only screen and (min-width: 0px) and (max-width: 764px) {
+	.head ul li{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	margin:0 auto;
+	cursor: pointer;
+	border: 1px solid #F8F8F8;
+}
+	.head ul li a{
+	line-height: 30px !important;
+	}
+	.head_pic .nav-arrows img{
+	width: 40px;
+	height: 40px;
+	}
+}
+@media only screen and (min-width: 350px) and (max-width: 504px) {
+	.head_pic .nav-arrows img{
+	width: 30px;
+	height: 30px;
+	}
+}
+@media only screen and (min-width: 0px) and (max-width: 350px) {
+	.head_pic .nav-arrows img{
+	width: 20px;
+	height: 20px;
+	}
+}
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+	.name{
+		display: none;
+	}
+	
+}
+/*导航end*/
+/*示意图begin*/
+.head_pic{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	position: relative;
+}
+.head_pic .sb-slider{
+	margin: 0;
+}
+.nav-arrows img:first-child{
+	position: absolute;
+	top:40%;
+	left:1.5%;
+	cursor: pointer;
+	background: rgba(0,0,0,0.1);
+	border-radius: 6px;
+	z-index: 100;
+}	
+.nav-arrows img:nth-child(2){
+	position: absolute;
+	top:40%;
+	right:1.5%;
+	cursor: pointer;
+	background: rgba(0,0,0,0.1);
+	border-radius: 6px;
+	z-index: 100;
+}	
+/*.arrow-left{
+	display: block;
+	width: 71px;
+	height: 71px;
+	background: url(../img/left.png)no-repeat rgba(0,0,0,0.1);
+	cursor: pointer;
+	border-radius: 6px;
+	position: absolute;
+	top: 47%;
+	left:1.8%;
+}
+.arrow-right{
+	display: block;
+	width: 71px;
+	height: 71px;
+	background: url(../img/right.png)no-repeat rgba(0,0,0,0.1);
+	cursor: pointer;
+	border-radius: 6px;
+	position: absolute;
+	top: 47%;
+	left: 94%;
+}*/
+/*示意图end*/
+/*简介begin*/
+.content{
+	width: 62%;
+	padding-top: 1%;
+	padding-bottom:4% ;
+}
+.content p:first-child{
+	text-align: center;	
+	font-size: 18px;
+	color: #666666;
+	line-height: 47px;
+}
+.content p{
+	color: #666666;
+}
+/*简介end*/
+/*页脚导航begin*/
+.end{
+	text-align: center;
+	background: #393737;
+	width: 100%;
+	height: auto;
+	padding-top: 50px;
+	overflow: hidden;
+	margin-bottom: 0;
+	border: none;
+}
+.end ul{
+	display: block;
+	width: 44.3%;
+	height: auto;
+	margin: 0 auto;
+}
+.end ul li{
+	width: 20%;
+	float: left;
+	text-align: center;
+}
+.end ul li a{
+	color: rgb(204, 203, 202);
+	font-size: 14px;
+	line-height: 50px;
+}
+.word_four{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.word_four p{
+	color: #868686;
+	font-size: 14px;
+	line-height: 20px;
+}
+.word_four a{
+	color: #868686;
+	font-size: 14px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+	.end ul li a{
+		font-size:12px ;
+		line-height: 50px;
+	}
+}
+
+@media only screen and (min-width: 100px) and (max-width: 767px) {
+	.end ul li{
+		clear: both;
+		text-align: center;
+		width: 100%;
+		height: auto;
+		line-height: ;
+		margin: 0;
+	}
+}
+/*页脚导航end*/
+/*张华添加的css*/
+/*@media only screen and (min-width: 904px) and (max-width: 1810px) {
+	.page_one .word_two p:first-child{font-size: 0.4em;}
+}*/
