@@ -1,0 +1,46 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;                                                                                
+}
+.warp{
+    width: 590px;
+    height: 506px;
+	font: 14px/40px "microsoft yahei";
+    cursor: pointer;
+}
+ul{
+	margin-top: 23px;
+	list-style: none;
+}
+li{
+	width: 280px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 5px;
+}
+.title{
+    font-size: 24px;
+    color: #6b99d1;
+    font-weight: bold
+}
+.mile{
+	border: 1px solid #808080;
+	width: 50px;
+	height: 20px;
+}
+img{
+	vertical-align: middle;
+	margin-top: -3px;
+}
+span{
+	vertical-align: bottom;
+	width: 50px;
+	height: 28px;
+}
+.reset{
+	float: right;
+}
+

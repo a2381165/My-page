@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	font: 14px Lucida Sans Unicode, Myriad Pro, Hiragino Sans GB, Heiti SC, Microsoft YaHei, arial;
+	color: #666;
+}
+h1{
+	font-size: 24px;
+	color: #6b99d1;
+	font-weight: bold;
+}
+.l {
+	width: 100px;
+}
+.r {
+	width: 300px;
+}
+.left{
+	text-align: left;
+	width: 176px;
+}
+.right{
+	text-align: right;
+	width: 100px;
+}
+.content{
+	padding: 40px 0 0 60px;
+	width: 590px;
+}
+button{
+	width: 100px;
+	height: 30px;
+	border: 1px;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	margin-top: 10px;
+}
+#count{
+	margin-left: 37px;
+	background: #5EB84C;
+}
+#reset{
+		background: #A0A99E;
+}
+.main {
+	padding-bottom: 50px;
+	background: url(../img/dht.png) no-repeat bottom center;
+}
+.main table{
+	display: table;
+    border-spacing: 2px;
+    border-color: grey;
+}
+.main td{
+	height: 34px;
+	padding-bottom: 10px;
+}
+.main input{
+	width: 41px;
+	height: 23px;
+}
+.result{
+	margin-top: 30px;
+}
+.result td{
+	border: 1px solid #dfdfdf;
+	border-left: 0;
+	border-top: 0;
+	padding: 0px 8px;
+	background: #F7F7F7;
+	
+}
+.result table{
+	border: 1px solid #dfdfdf;
+	line-height: 28px;
+	font-size: 12px;
+	color: #5e5e5e;
+}

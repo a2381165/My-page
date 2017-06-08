@@ -1,0 +1,80 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+#cont {
+    width: 590px;
+	padding: 40px 0 0 60px;
+}
+h2{
+	font-size: 24px;
+	color: #6b99d1;
+	font-weight: bold;
+}
+p{
+	color: #666;
+	line-height: 24px;
+	padding-top: 8px;
+}
+button{
+	width: 100px;
+	height: 30px;
+	border: 1px;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	margin-top: 10px;
+}
+#count{
+	margin-left: 37px;
+	background: #5EB84C;
+}
+#reset{
+		background: #A0A99E;
+}
+/*table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}*/
+#speed table {
+    background: #f7f7f7;
+    border: 1px solid #dfdfdf;
+    border-right: 0;
+    border-bottom: 0;
+    font-size: 12px;
+    color: #5e5e5e;
+    text-align: center;
+    line-height: 20px;
+}
+#tab2 tr td {
+   
+    border-bottom: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+}
+.title{
+	background-color: #dfdfdf;
+}
+
+.calcu, .calcure {
+    background: #5eb84c;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 2px;
+    margin-top: 20px;			    
+}
+.calcure {
+    background: #a0a99e;
+}
+.line{
+	width: 581px;
+	height: 6px;
+	margin-top: 20px;
+	background: url(../img/dht.png);
+}

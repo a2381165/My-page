@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/Marathon.css"/>
+		<script type="text/javascript" src="../js/Marathon 副本.js"></script>
+	</head>
+	<body>
+		<div class="content">
+			<div class="up">
+				<h1>马拉松配速指南（Marathon Pace Guide）</h1>
+				<p>输入你马拉松 预计完赛的时间（？小时?分？秒）或预计配速（？分？秒/公里），计算出另外一项和每公里所用的时间（1-42公里） </p>
+				<div class="main">
+					<table border="0" cellspacing="0" cellpadding="0" id="tab" width="300">
+						<tr>
+							<td class="l" align="right">预计完成时间：</td>
+							<td class="r">
+								<select id="hour">
+								</select>
+								时
+								<select id="minute">
+								</select>
+								分
+								<select id="second">
+								</select>
+								秒
+							</td>
+						</tr>
+						<tr>
+							<td align="right">或&nbsp;预计配速：</td>
+							<td>
+								<input type="text" name="" id="speed_m" value="" />
+								分
+								<input type="text" name="" id="speed_s" value="" />
+								秒/公里
+							</td>
+						</tr>
+					</table>
+					<button id="count">计算</button>
+					<button id="reset">重置</button>
+				</div>
+				
+				
+			</div>
+			<div class="result">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td class="right">1 km</td>
+							<td class="left" id="d1"></td>
+							<td class="right">20 km</td>
+							<td class="left" id="d6"></td>
+						</tr>
+						<tr>
+							<td class="right">2 km</td>
+							<td class="left" id="d2"></td>
+							<td class="right">半程马拉松</td>
+							<td class="left" id="d7"></td>
+						</tr>
+						<tr>
+							<td class="right">5 km</td>
+							<td class="left" id="d3"></td>
+							<td class="right">30 km</td>
+							<td class="left" id="d8"></td>
+						</tr>
+						<tr>
+							<td class="right">10 km</td>
+							<td class="left" id="d4"></td>
+							<td class="right">全程马拉松</td>
+							<td class="left" id="d9"></td>
+						</tr>
+						<tr>
+							<td class="right">15 km</td>
+							<td class="left" id="d5"></td>
+							<td></td>
+							<td></td>
+						</tr>
+						
+					</table>
+			</div>
+			
+		</div>
+		<div class="a">
+			
+		</div>
+		
+		<!--<script type="text/javascript">
+			var oHour=document.getElementById("hour")
+	for(i=1;i<25;i++){
+				oHour.innerHTML+='<option value='+i+'>'+i+'</option>';
+
+			}
+	var oMinute=document.getElementById("minute")
+	for(i=0;i<61;i++){
+				oMinute.innerHTML+='<option>'+i+'</option>';
+			}
+	var oSecond=document.getElementById("second")
+	for(i=0;i<61;i++){
+				oSecond.innerHTML+='<option>'+i+'</option>';
+			}
+		</script>-->
+		
+	</body>
+</html>

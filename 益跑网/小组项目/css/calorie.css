@@ -1,0 +1,54 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+.content{
+	padding: 40px 0 0 60px;
+	width: 590px;
+}
+h2{
+	font-size: 24px;
+	color: #6b99d1;
+	font-weight: bold;
+}
+p{
+	color: #666;
+	line-height: 24px;
+	padding-top: 8px;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}
+.line{
+	width: 581px;
+	height: 6px;
+	margin-top: 20px;
+	background: url(../img/dht.png);
+}
+.calcu .calcure {
+    background: #5eb84c;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 2px;
+    margin-top: 20px;			    
+}
+.calcure {
+    background: #a0a99e;
+}
+#calorie {
+    color: #333;
+    line-height: 28px;
+    			   
+}
+#ca{
+	display: none;
+	margin-top: 50px;
+}

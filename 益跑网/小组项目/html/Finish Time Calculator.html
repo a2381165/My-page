@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/Finish Time Calculator.css"/>
+		<script src="../js/Finish Time Calculator.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--完跑计算器start-->
+		<div class="finish_caculator">
+			<h2>完跑计算器<span class="head">（Finish Time Calculator）</span></h2>
+			<span>输入你已经跑的距离、已跑距离所用时间、计划跑的距离三项，计算出你跑完计划里程的时间
+			如你计划跑10公里、已跑8公里、用时40分钟，你跑完10公里的用时将是49分58秒 。</span>
+			<p class="firstp">你已经跑的距离：<input type="text" id="distance1" value="0" />公里</p>	
+			<p class="artical1">用时： 
+				<select id="select1"></select>
+				时
+				<select id="select2"></select>
+				分
+				<select id="select3"></select>
+				秒
+			</p>	
+			<p class="artical2">计划跑的距离：<input type="text" id="plan" value="0" />公里</p>	
+			<button id="caculate">计算</button>
+			<button id="repeat">重置</button>
+			<div class="hr"></div>
+			<div id="finsh">
+				完成的时间是：<span id="span1">0</span>时<span id="span2">50</span>分<span id="span3">40</span>秒
+			</div>
+		</div>
+		<!--完跑计算器endding-->
+	</body>
+</html>

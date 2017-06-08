@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<title>my demo</title>
+		<script type="text/javascript">
+			function change_bg(obj) {
+				console.log(1);
+				var a = document.getElementsByClassName("Menu")[0].getElementsByTagName("li");
+				for(var i = 0; i < a.length; i++) {
+					a[i].className = "";
+					console.log(a[1].className);
+				}
+				obj.className = "current";
+			}
+		</script>
+		<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="wrap">
+				<div class="logo">
+					<a href="#" target="_blank"><img src="../img/logo.png" /></a>
+				</div>
+				<nav>
+					<ul>
+						<li>
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">赛事</a>
+							<ul class="game">
+								<li>
+									<a href="#">+&nbsp;赛事城市</a>
+								</li>
+								<li>
+									<a href="#">+&nbsp;赛事报名</a>
+								</li>
+								<li>
+									<a href="#">+&nbsp;赛事日历</a>
+								</li>
+								<li>
+									<a href="#">+&nbsp;赛事相册</a>
+								</li>
+								<li>
+									<a href="#">+&nbsp;赛事查询</a>
+								</li>
+								<li>
+									<a href="#">+&nbsp;赛事发布</a>
+								</li>
+								<li>
+									<a href="#">+&nbsp;国内机票</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">拼团</a>
+						</li>
+						<li>
+							<a href="#">装备</a>
+							<ul class="accouter">
+								<li>
+									<a href="#">+&nbsp;跑步装备</a>
+								</li>
+								<li>
+									<a href="#">+&nbsp;选鞋</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">训练</a>
+							<ul class="training">
+								<li>
+									<a href="#">+&nbsp;训练提高</a>
+								</li>
+								<li>
+									<a href="#">+&nbsp;营养恢复</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">越野跑</a>
+						</li>
+						<li>
+							<a href="#">跑者专栏</a>
+						</li>
+						<li>
+							<a href="#">约跑</a>
+						</li>
+						<li>
+							<a href="#">俱乐部</a>
+						</li>
+						<li>
+							<a href="#">小工具</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="content">
+			<div class="wrap">
+				<div class="Menu">
+					<ul>
+						<li onclick="change_bg(this)" class="current">
+							<a href="Pace Calculator.html" target="aaa">配速计算器（Pace Calculator）</a>
+						</li>
+						<li onclick="change_bg(this)">
+							<a href="Pace Caventor.html" target="aaa">配速转换器（Pace Converter）</a>
+						</li>
+						<li onclick="change_bg(this)">
+							<a href="Finish Time Calculator.html" target="aaa">完跑计算器（Finish Time）</a>
+						</li>
+						<li onclick="change_bg(this)">
+							<a href="Marathon.html" target="aaa">马拉松配速指南（Marathon Pace）</a>
+						</li>
+						<li onclick="change_bg(this)">
+							<a href="Age-graded Calculator.html" target="aaa">年龄等级计算器（Age-graded）</a>
+						</li>
+						<li onclick="change_bg(this)">
+							<a href="BMI.html" target="aaa">BMI体重指数计算器</a>
+						</li>
+						<li onclick="change_bg(this)">
+							<a href="calorie.html" target="aaa">卡路里计算器（Calorie）</a>
+						</li>
+						<li onclick="change_bg(this)">
+							<a href="training.html" target="aaa">训练计算器</a>
+						</li>
+						<li onclick="change_bg(this)">
+							<a href="athlete.html" target="aaa">国家运动员等级</a>
+						</li>
+						<li onclick="change_bg(this)">
+							<a href="calculator.html" target="aaa">基础代谢计算器</a>
+						</li>
+						<li onclick="change_bg(this)">
+							<a href="Shoe size.html" target="aaa">鞋码对照表</a>
+						</li>
+						<li onclick="change_bg(this)">
+							<a href="transform.html" target="aaa">公英制转换</a>
+						</li>
+					</ul>
+				</div>
+				<div class="right">
+					<iframe src="Pace Calculator.html" name="aaa" frameborder="0" />
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/calculator.css" />
+		<script type="text/javascript" src="../js/calculator.js"></script>
+	</head>
+
+	<body>
+		<div class="warp">
+			<div class="metabolism">
+				<span class="title">基础代谢计算器</span><br />
+				<p>基础代谢率（Basal Metabolic Rate，简称BMR）是指：我们在安静状态下（通常称为静卧状态）消耗的最低热量，人的其他活动都建立在这个基础上。<br />一日理想卡路里摄入量=BMR&nbsp;x&nbsp;活动因子指数</p>
+				<div class="box2">
+					性别:&nbsp;
+					<input type="radio" id="man" name="sex" class="sex" value="man" checked="checked"/>&nbsp;男&nbsp;<input type="radio" name="sex" id="woman" class="sex" value="woman" />&nbsp;女<br/> 
+					身高:&nbsp;<input type="text" id="high" class="box" value="" />&nbsp;Cm 
+					体重:&nbsp;<input type="text" id="weight" class="box" />&nbsp;Kg
+					 年龄:&nbsp;<input type="text" id="age" class="box" />&nbsp;岁
+				</div>
+				<div class="box3">
+					<span>运动习惯：</span>
+					<div class="radio">
+						<p><input type="radio" name="hobby" id="h1" class="hobby" checked="checked"/>长时间坐在办公室、教室里，很少或是 完全没有运动的人。</p>
+						<p><input type="radio" name="hobby" id="h2" class="hobby"  />偶尔会运动或散步、逛街、到郊外踏青，每周大约少量运动1～3次的人。</p>
+						<p><input type="radio" name="hobby" id="h3" class="hobby" />有持续运动的习惯，或是会上健身房，每周大约运动3～6次的人。</p>
+						<p><input type="radio" name="hobby" id="h4" class="hobby"  />热爱运动，每周运动6～7次，或是工作量相当大的人。</p>
+						<p><input type="radio" name="hobby" id="h5" class="hobby" />工作或生活作息需要大量劳动，相当消耗能量的人。</p>
+					</div>
+				</div>
+				<input type="button" class="calculations" id="calculations" value="计算" />
+				<input type="button" class="reset" id="reset" value="重置" />
+				<div id="calories" class="calories"></div>
+				<div id="daycalories" class="calories"></div>
+	
+				
+			</div>
+		</div>
+
+	</body>
+
+</html>

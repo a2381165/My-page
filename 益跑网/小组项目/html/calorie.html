@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/calorie.css"/>
+		<script src="../js/calorie.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="content">
+		<h2>卡路里计算器（Calorie Calculator）</h2>
+		<p>输入跑步距离（公里）、体重（公斤）计算卡路里。</p>
+		<table  id="tab" width="300">
+			<tr>
+				<td nowrap align="right">
+					跑步距离
+				</td>
+				<td nowrap>
+					<input type="text" class="ik" id="distance" name="distance" size="5" value="" />
+					公里
+				</td>
+			</tr>
+			<tr>
+				<td nowrap align="right">
+					体重
+				</td>
+				<td nowrap>
+					<input type="text" class="ik" id="weight" name="weight" size="5" value="" />
+					公斤
+				</td>
+			</tr>
+		</table>
+		<div class="tj">
+			<a id="btn2" class="calcu" onclick="ok()">计算</a>
+			<a id="btn" class="calcure" onclick="clear()">重置</a>
+			
+		</div>
+		<div class="line"></div>
+		<div id="ca">
+		你消耗了<a id="calorie"></a>千卡kcal
+		</div>
+		</div>
+		
+	</body>
+</html>

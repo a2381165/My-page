@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/training.css"/>
+		<script type="text/javascript" src="../js/training.js"></script>
+	</head>
+	<body>
+		<div id="cont">
+		<h2>训练计算器（Training Calculator）</h2>
+		
+		<table  id="tab" width="100">
+			<tr>
+				<td nowrap align="right">
+					最新的跑步距离：
+				</td>
+				<td nowrap>
+					<input type="text" class="ik" id="distance" name="distance" size="5" value="" />
+					公里
+				</td>
+			</tr>
+			<tr>
+				<td nowrap align="right">
+					最新的跑步时间：
+				</td>
+				
+				<td nowrap>
+					<select id="slt_hours" name="slt_hours" onchange="document.getElementById('hours').value=this.options[this.selectedIndex].value;">
+						
+					</select>
+					<input type="hidden" id="hours" name="hours" value="0">时
+					<select id="slt_minutes" name="slt_minutes" onchange="document.getElementById('minutes').value=this.options[this.selectedIndex].value;">
+						
+					</select>
+					<input type="hidden" id="minutes" name="minutes" value="0"> 分
+					<select id="slt_seconds" name="slt_seconds" onchange="document.getElementById('seconds').value=this.options[this.selectedIndex].value;">
+						
+					</select>
+					<input type="hidden" id="seconds" name="seconds" value="0"> 秒
+				</td>
+			</tr>
+		</table>
+		<div class="tj">
+			<button id="count">计算</button>
+			<button id="reset">重置</button>
+			
+		</div>
+		<div class="line"></div>
+		<div id="speed">
+			预计用时：
+			<table id="tab2" width="482" bordercolor="#cccccc" cellspacing="0" cellpadding="0">
+				<tbody>
+					<tr class="title">
+					<td colspan="2">用时</td>
+					<td colspan="2">配速</td>
+					</tr>
+				
+				<tr>
+					<td width="25%">1.5 km</td>
+					<td width="25%" id="s1"></td>
+					<td width="25%" id="p1"></td>
+					<td width="25%">公里/分</td>
+				</tr>
+				<tr>
+					<td width="25%">3 km</td>
+					<td width="25%" id="s2"></td>
+					<td width="25%" id="p2"></td>
+					<td width="25%">公里/小时</td>
+				</tr>
+				<tr>
+					<td width="25%">5 km</td>
+					<td width="25%" id="s3"></td>
+					<td width="25%" id="p3"></td>
+					<td width="25%">米/秒</td>
+				</tr>
+				<tr>
+					<td width="25%">10 km</td>
+					<td width="25%" id="s4"></td>
+					<td width="25%" id="p4"></td>
+					<td width="25%"></td>
+				</tr>
+				<tr>
+					<td width="25%">半程马拉松</td>
+					<td width="25%" id="s5"></td>
+					<td width="25%" id="p5"></td>
+					<td width="25%"></td>
+				</tr>
+				<tr>
+					<td width="25%">全程马拉松</td>
+					<td width="25%" id="s6"></td>
+					<td width="25%" id="p6"></td>
+					<td width="25%"></td>
+				</tr>
+				</tbody>
+			</table>
+		</div>
+		</div>
+		<script type="text/javascript">
+			
+		</script>
+	</body>
+</html>

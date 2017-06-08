@@ -1,0 +1,51 @@
+*{
+	font: "微软雅黑";
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;	
+}
+.pace_caventor{
+	width: 590px;
+	height: 324px;
+	font-size: 14px;
+	color: #666666;
+	padding: 40px 0 0 60px;
+}
+.pace_caventor h2{
+	color: #6B99D1;
+}
+.head{
+	font-weight: 100;
+}
+.firstp:{
+	margin-top: 37px;
+}	
+.pace_caventor input{
+	width: 40px;
+}
+.pace_caventor button{
+	width: 100px;
+	height: 30px;
+	border: 1px;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	margin-top: 10px;
+}
+.pace_caventor #caculate{
+	margin-left: 37px;
+	background: #5EB84C;
+}
+.pace_caventor #repeat{
+	background: #A0A99E;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,158 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+body{
+    font: 14px Lucida Sans Unicode, Myriad Pro, Hiragino Sans GB, Heiti SC, Microsoft YaHei, arial;
+    color: #ccc;
+    background: url(../img/bg.jpg) fixed;
+}
+.Menu{
+	padding-top:40px ;
+	width: 300px;
+	height: 100%;
+	float: left;
+	background: rgba(255,255,255,.8);
+	
+}
+
+.Menu a{
+	font-size: 16px;
+	color: #666;	
+}
+.Menu .current{
+	background: #F1F7F0;
+}
+.Menu .current a{
+	font-weight: bold;
+	color: #39942d;
+}
+.Menu li{
+	height: 38px;
+	line-height: 38px;
+	width: 270px;
+	padding-left:30px ;
+	background: url(../../3.17/img/toolssj.png) no-repeat 13px center;
+}
+.content{
+	margin-top: 50px;
+	padding-top:40px ;
+	height: 500px;	
+}
+.wrap{
+	width: 970px;
+	height: 100%;
+	margin: 0 auto;
+}
+header{
+	width: 100%;
+	height: 126px;
+	background: url(../img/nav_background.jpg);
+}
+nav{ 
+	height: 40px;
+}
+nav li{
+	float: left;
+	display: block;
+	padding: 0 10px;
+	position: relative;
+	height: 40px;
+}
+nav li:hover{
+	background: rgba(0,0,0,0.7);
+}
+nav li:hover ul{
+	display: block;
+}
+nav a{
+	font: 18px/40px "microsoft yahei";
+	color: #FFF;
+	display: block;	
+	padding: 0 16px;
+}
+
+.game, .accouter, .training{
+	border: 1px solid pink;
+	width: 188px;
+}
+ul.game, ul.accouter, ul.training{
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	z-index: 30;
+	display: none;
+	background: rgba(0,0,0,0.7);
+}
+.game a{
+	color:darkgoldenrod;
+}
+.accouter a{
+	color:gold;
+}
+.training a{
+	color:forestgreen;
+}
+.game a:hover{
+	color: #fff;;
+}
+.game li, .accouter li, .training li{
+	float: none;
+	font: 16px/30px "microsoft yahei";
+	padding-left: 20px;
+}
+.game li:hover{
+	background-color: darkorange;
+	
+}
+.accouter li:hover{
+	background-color: palevioletred;
+}
+.training li:hover{
+	background-color: goldenrod;
+}
+.banner{
+	width: 1024px;
+	height: 668px;
+	margin: 0 auto;	
+	position: relative;
+	overflow: hidden;
+}
+.banner ul li{
+	float: left;
+	
+}
+#list{
+	width: 10000px;
+	position: absolute;	
+	transition: all 1s;
+}
+.banner a{
+	background:rgba(0,0,0,0.1) ;
+	border-radius: 5px 5px 5px 5px;
+	position: absolute;
+}
+.banner .left{
+    z-index: 3;
+    left: 0;
+    top: 50%;
+    margin-top: -35px;    
+}
+.banner .right{	
+    z-index: 3;
+    right: 0;
+    top: 50%;
+    margin-top: -35px;    
+}
+.right{
+	width: 670px;
+	height: 540px;
+	float: right;
+	background:rgba(255,255,255,.8);
+}
+iframe{
+	width: 670px;
+	height: 540px;
+}

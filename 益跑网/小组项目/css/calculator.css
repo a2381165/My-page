@@ -1,0 +1,77 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+.warp{
+    width: 590px;
+    padding: 35px 0 0 60px;
+	font: 14px/40px "microsoft yahei";
+    cursor: pointer;
+/*    background: url(../img/dht.png)no-repeat 0px 405px;*/
+    position: relative;
+}
+.metabolism{
+	height: 465px;
+	background: url(../img/dht.png)no-repeat bottom center;
+}
+.box{
+	border: 1px solid #808080;
+	width: 49px;
+	height: 20px;
+}
+.title{
+    font-size: 24px;
+    color: #6b99d1;
+    font-weight: bold
+}
+p{
+    margin: 1em 0;
+    font: 14px/24px "microsoft yahei";
+}
+.box3{
+	width: 590px;
+	height: 110px;
+	font: 14px/110px "microsoft yahei";
+}
+span{
+	float: left;
+}
+.radio{
+	float: left;
+}
+.radio p{
+	font: 14px/20px "microsoft yahei";
+	margin: 2px;
+}
+.calculations{
+    color: #fff;
+    background: #5eb84c;
+    border-radius: 5px;
+    float: left;
+    margin-left: 150px;
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 2px;
+}
+.reset{
+    color: #fff;
+    background: #a0a99e;
+    border-radius: 5px;
+    float: left;
+    margin-left: 20px;
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 2px;
+}
+.calories{
+	width: 590px;
+	clear: both;
+	/*height: 70px;*/
+	/*position: absolute;
+	bottom: 30px;*/
+}

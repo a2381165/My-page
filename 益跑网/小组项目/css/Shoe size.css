@@ -1,0 +1,18 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+h1{
+	font-size: 24px;
+	color: #6b99d1;
+	font-weight: bold;
+}
+.content{
+	width: 590px;
+	height: 324px;
+	font-size: 14px;
+	color: #666666;
+	padding: 40px 0 0 60px;
+}

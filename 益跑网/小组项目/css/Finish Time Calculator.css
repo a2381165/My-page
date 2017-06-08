@@ -1,0 +1,72 @@
+*{
+	font: "微软雅黑";
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+.finish_caculator{
+	width: 590px;
+	height: 324px;
+	font-size: 14px;
+	color: #666666;
+	padding: 40px 0 0 60px;
+}
+.finish_caculator h2{
+	color: #6B99D1;
+}
+.head{
+	font-weight: 100;
+}
+.firstp:{
+	margin-top: 37px;
+}	
+.artical1{
+	margin-left: 70px;
+}
+.finish_caculator select{
+	width: 40px;
+	margin-left: -4px;
+}
+.finish_caculator input{
+	width: 38px;
+	padding: 0;
+	height: 19px;
+}
+.artical2{
+	margin-left: 14px;
+}	
+.finish_caculator button{
+	width: 100px;
+	height: 30px;
+	border: 1px;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	margin-top: 10px;
+}
+.finish_caculator #caculate{
+	margin-left: 37px;
+	background: #5EB84C;
+}
+.finish_caculator #repeat{
+	background: #A0A99E;
+}
+.hr{
+	background: url(img/dht.png);
+	width: 590px;
+	height: 7px;
+	margin-top: 22px;
+}
+#finsh{
+	margin-top: 20px;
+	display: none;
+}
+
+
+
+
+
+
+
+

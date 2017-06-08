@@ -1,0 +1,72 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+/*.warp div{
+	width: 590px;
+	padding-top: 66px;
+    float: right;
+    color: #666;
+    line-height: 40px;
+    cursor: pointer;
+}*/
+
+p{
+    margin: 1em 0;
+    font: 14px/24px "microsoft yahei";
+}
+.sports{
+	padding: 40px 0 0 60px;
+	width: 590px;
+	background: url(../img/dht.png) no-repeat 0px 403px;
+}
+.title{
+    font-size: 24px;
+    color: #6b99d1;
+    font-weight: bold
+}
+.high{
+	border: 1px solid #808080;
+	width: 49px;
+	height: 20px;
+}
+.weight{
+	border: 1px solid #808080;
+	width: 49px;
+	height: 20px;
+}
+.age{
+	border: 1px solid #808080;
+	width: 49px;
+	height: 20px;
+}
+
+.calculations{
+    color: #fff;
+    background: #5eb84c;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 2px;
+    z-index: -1;
+}
+.reset{
+    color: #fff;
+    background: #a0a99e;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 2px;
+    z-index: -1;
+}
+
+
+
+
