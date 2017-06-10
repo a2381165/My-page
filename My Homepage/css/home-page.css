@@ -114,6 +114,7 @@ canvas{
 .js-transitions-disabled * {
     -webkit-transition: none !important;
     transition: none !important;
+    -ms-transition: none !important;
 }
 
 .carousel {
@@ -170,8 +171,11 @@ canvas{
     margin: auto;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    
     -webkit-transform: translateZ(calc(-50vh + 20px));
     transform: translateZ(calc(-50vh + 20px));
+    -ms-transform: translateZ(calc(-50vh + 20px));
 }
 
 .spinner {
@@ -185,36 +189,47 @@ canvas{
     margin: auto;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
     -webkit-transition: -webkit-transform 1s;
+    -ms-transition: -ms-transform 1s; 
     transition: -webkit-transform 1s;
+    transition: -ms-transform 1s;
     transition: transform 1s;
     transition: transform 1s, -webkit-transform 1s;
     -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
     -webkit-transform: rotateX(0);
     transform: rotateX(0);
+    -ms-transform: rotateX(0);
 }
 
 .js-spin-fwd .spinner {
     -webkit-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    
 }
 
 .js-spin-bwd .spinner {
     -webkit-transform: rotateX(90deg);
     transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
 }
 
 .js-spin-fwd .spinner--right {
     -webkit-transform: rotateX(90deg);
     transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
 }
 
 .js-spin-bwd .spinner--right {
     -webkit-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
 }
 
 .spinner--right {
@@ -234,27 +249,32 @@ canvas{
     display: block;
     -webkit-transform: rotateX(90deg) translateZ(calc(50vh - 20px));
     transform: rotateX(90deg) translateZ(calc(50vh - 20px));
+    -ms-transform: rotateX(90deg) translateZ(calc(50vh - 20px));
 }
 
 .spinner--right .spinner__face.js-next {
     -webkit-transform: rotateX(270deg) translateZ(calc(50vh - 20px));
     transform: rotateX(270deg) translateZ(calc(50vh - 20px));
+    -ms-transform: rotateX(270deg) translateZ(calc(50vh - 20px));
 }
 
 .js-spin-bwd .spinner__face.js-next {
     -webkit-transform: rotateX(-90deg) translateZ(calc(50vh - 20px));
     transform: rotateX(-90deg) translateZ(calc(50vh - 20px));
+    -ms-transform: rotateX(-90deg) translateZ(calc(50vh - 20px));
 }
 
 .js-spin-bwd .spinner--right .spinner__face.js-next {
     -webkit-transform: rotateX(-270deg) translateZ(calc(50vh - 20px));
     transform: rotateX(-270deg) translateZ(calc(50vh - 20px));
+    -ms-transform: rotateX(-270deg) translateZ(calc(50vh - 20px));
 }
 
 .js-active {
     display: block;
     -webkit-transform: translateZ(calc(50vh - 20px));
     transform: translateZ(calc(50vh - 20px));
+    -ms-transform: translateZ(calc(50vh - 20px));;
 }
 
 .content {
