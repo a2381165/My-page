@@ -1,0 +1,502 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	background: rgb(240, 242, 244) ;
+}
+.home-page{
+	width: 100%;
+	transition: all 2s linear; 
+}
+/*首页begin*/
+/*导航begin*/
+.nav{
+	width: 100%;
+	height: auto;
+	margin:0 auto;	
+	
+}
+.nav ul{
+	width: 100%;
+	padding-top: 15%;
+	text-align: center;
+	position: fixed;
+	z-index: 100;
+	opacity: 0.9;
+}
+.nav li:nth-child(1){
+	width: 11.4%;
+	margin: 2px auto;
+	border: 2px solid rgb(240, 242, 244);
+	position: absolute;	
+	top: 5%;
+	right: 44.05%;
+	transition: all 1s linear;
+}
+.nav li:nth-child(2){
+	width: 11.4%;
+	margin: 2px auto;
+	border: 2px solid rgb(240, 242, 244);
+	position: absolute;	
+	top: 106%;
+	right: 44.05%;
+	transition: all 1s linear;
+}
+.nav li:nth-child(3){
+	width: 11.4%;
+	margin: 2px auto;
+	border: 2px solid rgb(240, 242, 244);
+	position: absolute;	
+	top: 116.5%;
+	right: 44.05%;
+	transition: all 1s linear;
+}
+.nav li:nth-child(4){
+	width: 11.4%;
+	margin: 2px auto;
+	border: 2px solid rgb(240, 242, 244);
+	position: absolute;	
+	top: 128%;
+	right: 44.05%;
+	transition: all 1s linear;
+}
+.nav li:hover a{
+	color: #D81E06;
+}
+.nav ul a{
+	color:black;
+	font-family:"arial rounded mt bold";
+	font-size: 120%;
+}
+/*导航endding*/
+/*时钟begin*/
+canvas{
+	display: inline;
+	width: 76%;
+	height: 80%;
+}
+/*时钟endding*/
+/*首页begin*/
+.words{
+	width: 50%;
+	height: 200px;
+	margin: 10% auto;
+	font-size: 62px;
+	padding-top: 10%;
+	overflow: hidden;
+}
+.words ul{
+	width: 100%;
+	height: 100%;
+}
+.words li{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: black ;
+	line-height: 200px;
+	font-family:fixedsys;
+}
+.words li:first-child{
+	background: ;
+}
+.words li:nth-child(2){
+	background: ;
+}
+.words li:nth-child(3){
+	background: ;
+	color: #D81E06;
+	font-weight: bold;
+}
+/*首页endding*/
+/*个人介绍begin*/
+.js-transitions-disabled * {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+.carousel {
+    position: relative;
+    padding: 4%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-perspective: 50vw;
+    perspective: 50vw;
+    -webkit-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+    display: none;
+}
+
+.carousel__control {
+    position: absolute;
+    height: 160px;
+    width: 40px;
+    background:  rgb(240, 242, 244);
+    right: 48%;
+    top: 0;
+    bottom: 20%;
+    margin: auto;
+    z-index: 1;
+}
+
+.carousel__control a {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top: 75%;
+    box-sizing: border-box;
+    color: black;
+}
+
+.carousel__control a:hover{
+    color: #D81E06;
+}
+
+.carousel__control a.active{
+	color: #D81E06;
+}
+
+.carousel__control a:first-child {
+    margin-top: 15px;
+}
+
+.carousel__stage {
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    margin: auto;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translateZ(calc(-50vh + 20px));
+    transform: translateZ(calc(-50vh + 20px));
+}
+
+.spinner {
+    position: absolute;
+    width: calc(50vw - (20px));
+    height: calc(100vh - 40px);
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    margin: auto;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+}
+
+.js-spin-fwd .spinner {
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+.js-spin-bwd .spinner {
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+}
+
+.js-spin-fwd .spinner--right {
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+}
+
+.js-spin-bwd .spinner--right {
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+.spinner--right {
+    right: 0;
+    left: auto;
+}
+
+.spinner__face {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.spinner__face.js-next {
+    display: block;
+    -webkit-transform: rotateX(90deg) translateZ(calc(50vh - 20px));
+    transform: rotateX(90deg) translateZ(calc(50vh - 20px));
+}
+
+.spinner--right .spinner__face.js-next {
+    -webkit-transform: rotateX(270deg) translateZ(calc(50vh - 20px));
+    transform: rotateX(270deg) translateZ(calc(50vh - 20px));
+}
+
+.js-spin-bwd .spinner__face.js-next {
+    -webkit-transform: rotateX(-90deg) translateZ(calc(50vh - 20px));
+    transform: rotateX(-90deg) translateZ(calc(50vh - 20px));
+}
+
+.js-spin-bwd .spinner--right .spinner__face.js-next {
+    -webkit-transform: rotateX(-270deg) translateZ(calc(50vh - 20px));
+    transform: rotateX(-270deg) translateZ(calc(50vh - 20px));
+}
+
+.js-active {
+    display: block;
+    -webkit-transform: translateZ(calc(50vh - 20px));
+    transform: translateZ(calc(50vh - 20px));
+}
+
+.content {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    left: 0;
+}
+
+.spinner--right .content {
+    left: -100%;
+}
+
+.content__left,
+.content__right {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.content__right {
+    right: 0;
+    left: auto;
+}
+
+.content__left {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content__left:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 242, 244);
+}
+
+.content__left h2 {
+    position: absolute;
+    top: 50%;
+    margin-top: -3vw;
+    text-align: center;
+    font-size: 5vw;
+    height: 10vw;
+    opacity: 1;
+    color: black;
+    width: 100%;
+    letter-spacing: 0.15em;
+    line-height: 0.6;
+    z-index: 100;
+}
+
+.content__left span {
+    font-size: 1vw;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    opacity: 0.9;
+    font-family: Merriweather;
+    color: #D81E06;
+}
+
+.content__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.content__right .content__main {
+    font-weight: 300;
+    text-align: left;
+    color: black;
+    font-size: 1.3vw;
+    padding: 0 8vw;
+    line-height: 1.65;
+    margin: 0;
+    opacity: 0.8;
+    margin-top: 3%;
+}
+
+.content__right .content__main p:last-child {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 0.85em;
+}
+
+.content__right .content__index {
+    font-size: 30vh;
+    position: absolute;
+    right: -1vh;
+    top: 35vh;
+    opacity: 0.04;
+    font-family: oswald;
+    color: #fff;
+}
+
+[data-type="iceland"] .content__left {
+    background: rgb(240, 242, 244);
+}
+
+.spinner--right [data-type="iceland"] .content__left {
+    background-image: none;
+}
+
+[data-type="china"] .content__left {
+    background-image: none;
+}
+
+.spinner--right [data-type="china"] .content__left {
+    background-image: none;
+}
+
+[data-type="usa"] .content__left {
+    background-image: none;
+}
+
+.spinner--right [data-type="usa"] .content__left {
+    background-image: none;
+}
+
+[data-type="peru"] .content__left {
+    background-image: none;
+}
+
+.spinner--right [data-type="peru"] .content__left {
+    background-image: none;
+}
+/*个人介绍endding*/
+/*首页endding*/
+/*个人作品begin*/
+#menu .active{
+	border: 2px solid black !important;
+	border-radius: 12px;
+	transition: all 0.8s linear;
+	z-index: 100;
+	transform-style: preserve-3d;
+	animation: roll 1s linear;
+}
+@keyframes roll{
+	from{transform:rotateX(0);}
+	to{transform:rotateX(360deg);}
+}
+#menu .active a{
+	color: #D81E06;
+	font-weight: bold;
+}
+#impress{
+	top: 60% !important;
+}
+#impress div{
+	box-shadow: 20px 20px 10px grey;
+}
+#arrowLeft {
+	position: absolute;
+	top: 55%;
+	left: 20%;
+	cursor: pointer;
+}
+#arrowRight {
+	position: absolute;
+	top: 55%;
+	right: 20%;
+	cursor: pointer;
+}
+/*个人作品endding*/
+/*图灵机器人begin*/
+.myRobot{
+	width: 20%;
+	margin: 0 auto;
+	padding-top: 15%;
+	color: black;
+}
+.myRobot h3{
+	text-align: center;
+	color: #D81E06;
+}
+.myRobot ul{
+	width: 100%;
+	height: 400px;
+	margin-bottom: 0;
+	padding: 10px 5px;
+	overflow:auto;
+	background: url(../img/g.jpg) no-repeat center;
+}
+.myRobot ul li{
+	list-style: none;
+	margin-bottom: 5px;
+	clear: both;
+	background: none;
+}
+#list .me{
+	display: inline-block;
+	background: #199CC4;
+	color: #fff;
+	height: 22px;
+	width: auto;
+	padding: 4px 5px;
+	border-radius: 3px;
+	float: right;
+	margin-bottom: 5px;
+	font-size: 80%;
+}
+#list .msg{
+	display: inline-block;
+	background: #CCCCCC;
+	color: #000;
+	height: 22px;
+	width: auto;
+	padding: 4px 5px;
+	border-radius: 3px;
+	margin-bottom: 5px;
+	font-size: 80%;
+}
+.talk{
+	width: 109%;
+}
+.talk #text{
+	width: 350px;
+	height: 30px;
+	outline: none;
+	float: left;
+	border: 1px solid #199CC4;
+	border-radius: 4%;
+}
+.talk #btn{
+	width: 59px;
+	height: 30px;
+	float: left;
+	background: #199CC4;
+	border: 1px solid #199CC4;
+	border-radius: 15%;
+	color: white;
+	cursor: pointer;
+	margin-left: 1%;
+}
+/*图林机器人endding*/

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/home page.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/home page.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.fullPage.min.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+		$(function(){
+			$('#dowebok').fullpage({
+				'navigation': true,
+				anchors: ['page1', 'page2', 'page3', 'page4'],
+				menu:'#menu'
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<div class="home-page">
+			<!--导航start-->	
+			<div class="nav">		
+				<ul id="menu">
+			<!--时钟begin-->
+					<li><canvas width="200px" height="200px" id="clock" ></canvas></li>
+			<!--时钟endding-->
+					<li data-menuanchor="page2" class="active"><a href="#page2">About Me</a></li>
+					<li data-menuanchor="page3"><a href="#page3">My owe Work</a></li>
+					<li data-menuanchor="page4"><a href="#page4">Other</a></li>							
+				</ul>
+			</div>	
+			<!--导航endding-->
+			<div id="dowebok">
+			<!--首页begin-->	
+				<div class="section">
+			       	 <div class="words">
+			       	 	<ul>
+			       	 		<li><p>未来太过遥远</p></li>
+			       	 		<li><p>活在当下</p></li>
+			       	 		<li><p>一触即发</p></li>
+			       	 	</ul>
+			       	 </div>
+			    </div>
+			<!--首页endding-->    
+			<!--个人介绍begin-->	
+			    <div class="section">
+			       	<div class="carousel">
+				        <div class="carousel__stage">
+				            <div class="spinner spinner--left">
+				                <div class="spinner__face js-active" data-bg="#27323c">
+				                    <div class="content" data-type="iceland">
+				                        <div class="content__left">
+				                            <h2>关于我<br><span>About me</span></h2>
+				                        </div>
+				                        <div class="content__right">
+				                            <div class="content__main">
+				                                <p>姓名：牟海兵<br />
+			                                   	 出生年月：1994.7.15 <br />
+			                                   	 联系电话：18875258584 <br />
+			                                   	E-mail：haijiesong@qq.com <br />
+			                                   	QQ:446771462 <br />
+			                                   	联系地址：重庆南岸区 <br />
+			                                   	毕业学校：重庆建筑工程职业学院 <br />
+			                                   	学历：大专
+				                                </p>                 
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				                <div class="spinner__face" data-bg="#19304a">
+				                    <div class="content" data-type="china">
+				                        <div class="content__left">
+				                            <h2>工作经验<br><span>Work experience</span></h2>
+				                        </div>
+				                        <div class="content__right">
+				                            <div class="content__main">
+				                                <p>2016年11月至今        快腾信息技术有限公司<br />
+											    1、主要参与web前端的架构设计；<br />
+												2、负责将UI图纸进行切图；<br />
+												3、运用html和css以及js代码的编写以及bootstrap等框架精确还原web前端设计原图；<br />
+												4、实现web产品的交互效果和响应式开发，并对现有产品进行深入优化。</p>
+				                            </div>
+				                            <h3 class="content__index">02</h3>
+				                        </div>
+				                    </div>
+				                </div>
+				                <div class="spinner__face" data-bg="#2b2533">
+				                    <div class="content" data-type="usa">
+				                        <div class="content__left">
+				                            <h2>专业技能<br><span>Professional skills</span></h2>
+				                        </div>
+				                        <div class="content__right">
+				                            <div class="content__main">
+				                                <p>1、可以熟练运用HTML、CSS进行web页面整体布局和样式，并用HTML5以及CSS3完善前端效果和事件触发；<br />
+												2、掌握基本的JavaScript知识，具有良好代码书写规范，熟悉使用jQuery实现各种交互效果，了解其他常用的js插件库；<br />
+												3、熟练使用Bootstrap、Vue框架，了解mui等其他前端框架；<br />
+												4、能使用PS对UI设计图进行切图；<br />
+												5、能使用Nodejs和Json以及Ajax实现前端和后台的交互；<br />
+												6、了解php后台语言，明白php从数据库进行数据交互的基本原理。
+				                                </p>
+				                            </div>
+				                            <h3 class="content__index">03</h3>
+				                        </div>
+				                    </div>
+				                </div>
+				                <div class="spinner__face" data-bg="#312f2d">
+				                    <div class="content" data-type="peru">
+				                        <div class="content__left">
+				                            <h2>项目经验<br><span>Project experience</span></h2>
+				                        </div>
+				                        <div class="content__right">
+				                            <div class="content__main">
+				                                <p>
+				                                	1、旋木家具<br />
+													2、餐饮文化 <br />
+													3、益跑网 <br />
+													4、艺龙旅行网<br />
+													项目总结：<br />
+													通过编写网页和参与项目，更深入了解了前端页面结构层的主要布局思路、表示层的CSS样式控制、行为层采用JS和jquery的页面动态效果实现。基本掌握HTML、CSS、JS的知识和用法。熟练使用常用HTML语义化标签，并不断优化代码。其中项目2和项目4采用了bootstrap框架和部分js插件以完善动态效果和实现响应式体验。
+													编写代码过程中，代码书写速度逐渐提高，参与项目中遇到的困难在自己思考和参考资料或和同事交流学习中得到解决，并弥补了自身不足。
+				                                </p>
+				                            </div>
+				                            <h3 class="content__index">04</h3>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+			        	</div>
+			        	<div class="carousel__control">
+        				</div>
+   					</div>
+			    </div>
+			<!--个人介绍endding--> 
+			<!--项目经验begin-->
+			    <div class="section">
+			        <div id="impress" class="impress-not-supported">
+						<div id="intro" class="step" data-x="0" data-y="0">
+					        <h2>旋木家居</h2>				        
+					        <a href="http://www.eachwood.com/" target="_blank" ><img src="img/20170609180244.png" width="558" height="429"  /></a>
+					    </div>
+					    
+					    <div id="simplicity" class="step" data-x="1100" data-y="1200" data-scale="1.8" data-rotate="190">
+					        <h2>益跑网</h2>				        
+					        <a href="../running/ground/html/index.html" target="_blank"><img src="img/20170531173737.png" width="500" height="458"  /></a>
+					    </div>
+					    
+					    <div id="connect" class="step" data-x="-300" data-y="600" data-scale="0.2" data-rotate="270">
+					        <h2>凡科餐饮文化</h2>
+					        <a href="../food/index.html" target="_blank"><img src="img/20170531173702.png" width="500" height="458"  /></a>
+					    </div>
+					    
+					    <div id="upload" class="step" data-x="-200" data-y="1500" data-rotate="180">
+					        <h2>艺龙旅行</h2>				       
+					        <a href="../elong/elong.html" target="_blank"><img src="img/20170601122139.png" width="500" height="480"  /></a>
+					    </div>
+					    
+					    <div id="music" class="step" data-x="-1200" data-y="1000" data-scale="0.8" data-rotate="270">
+					        <h2>最后一页有个萌萌的机器人女朋友叫凉子哦~~</h2>				      	        
+					    </div>		    
+					</div>
+					<a id="arrowLeft" class="arrow"><img src="img/左箭头.png"/></a>
+					<a id="arrowRight" class="arrow"><img src="img/右箭头.png"/></a>
+			    </div>
+			<!--项目经验endding-->    
+			<!--图灵机器人begin-->
+			  	<div class="section">
+			        <div class="myRobot">
+						<h3>和萌萌的凉子对话</h3>
+						<ul id="list">
+						</ul>
+						<div class="talk">
+							<input type="text" name="" id="text"/>
+							<button id="btn">发送</button>
+						</div>
+					</div>
+						<script type="text/javascript">
+						$('#btn').click(function(){
+							send();
+						});
+						
+						$('#text').keypress(function(ev){
+							if (ev.keyCode==13){
+						        send();
+						    } 
+						});
+						
+						function send(){
+							if($('#text').val()){
+								var oLi='<li><span class="me">'+$('#text').val()+'</span></li>';
+								$('#list').append(oLi);
+								$('#list').scrollTop($('#list')[0].scrollHeight);
+								$.ajax({
+									url:'http://www.tuling123.com/openapi/api?key=1d28773a208148e39d9e14d7f5c82446&info='+$('#text').val(),
+									type:'get',
+									success:function(data){
+										var msg='<li><span class="msg">'+data.text+'</span></li>';
+										$('#list').append(msg);
+										$('#list').scrollTop($('#list')[0].scrollHeight);
+									},
+								});
+								$('#text').val('');
+							}
+						}
+					</script>
+			    </div>
+			<!--图林机器人endding-->    			    
+			</div>
+		</div>
+		<script src="canvas/clock.js"></script>
+		<script src="circle/assets/js/impress.js" type="text/javascript" charset="utf-8"></script>
+		<script src="circle/assets/js/script.js" type="text/javascript" charset="utf-8"></script>
+		<script src="about me/js/about_me.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
